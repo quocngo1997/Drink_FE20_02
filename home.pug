@@ -1,0 +1,454 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+  body
+    header#header
+      .header__category
+        .header__category__left
+          ul
+            a(href='')
+              li Tài khoản của tôi
+            a(href='')
+              li Trạng thái đơn hàng
+            a(href='')
+              li Danh sách ưa thích
+            a(href='')
+              li Giỏ hàng
+            a(href='')
+              li Đăng nhập
+            a(href='')
+              li Đăng ký
+        .header__category__right
+          input(type='text', placeholder='Tìm kiếm ở đây...')
+          i.fas.fa-search
+    section#banner
+      h1.banner__alcohol Rượu
+      h2.banner__red-wine VANG ĐỎ
+      h3.banner__since-1980 Since 1980
+    section#main
+      article.menu
+        .menu__logo
+          .menu__logo__list__img
+            img.menu__logo__img__one(src='image/Vector Smart Object.png', alt='')
+            h2 Wine hourse
+            h4 Since 1980
+            img.menu__logo__img__two(src='image/logo.png', alt='')
+        .menu__category
+          ul.menu__category__list
+            a(href='#') Trang Chủ
+            a(href='#') Rượu vang đỏ
+            a(href='#') Rượu trắng
+            a(href='#') Champagne
+            a(href='#') Thông tin
+            a(href='#') Blog
+            a(href='#') Liên hệ
+      article.main__introduce
+        img.main__introduce__left(src='image/introduce.jpg', alt='')
+        .introduce__title
+          h2.title__product Giới thiệu
+          img.title__dark(src='image/title_dark.png', alt='giới thiệu')
+          p.introduce__content
+            | Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam
+          button.button
+            a.add__to__cart(href='') xem thêm
+        img.main__introduce__right(src='image/introduce1.png', alt='')
+      article.product__suggest
+        .product__suggest__background
+        .product__suggest__content
+          .product__suggest__content__left
+            .list__img__product__suggest
+              img.img__product__suggest(src='image/14.jpg', alt='')
+              img.img__product__sale(src='image/sale.png', alt='')
+              span Sale
+          .product__suggest__content__right
+            h2 rượu nho năm 1987
+            img(src='image/titleleft-dark.png', alt='')
+            h1
+              | 330.000
+              sup đ
+            button.button
+              a.add__to__cart(href='')  add to cart
+            .product__suggest__content__right__information
+              p
+                | Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.
+            .product__suggest__content__right__time
+              .product__suggest__content__right__time__one
+                h1 334
+                h3 ngày
+              .product__suggest__content__right__time__one
+                h1 26
+                h3 giờ
+              .product__suggest__content__right__time__one
+                h1 60
+                h3 phút
+              .product__suggest__content__right__time__one
+                h1 15
+                h3 giây
+      article.product__new
+        h2.title__product sản phẩm mới
+        img.title__dark(src='image/title_dark.png', alt='giới thiệu')
+        .product__new__content
+          .product__new__content__specifically
+            .product
+              .product__image
+                img(src='image/newproduct_1.jpg', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              img.product__heading(src='image/sale.png', alt='')
+              span.product__heading__name Sale
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/newproduct_2.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              img.product__heading(src='image/new.png', alt='')
+              span.product__heading__name Mới
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/newproduct_3.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              img.product__heading(src='image/hot.png', alt='')
+              span.product__heading__name Hot
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/newproduct_4.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+      article.staticblock
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_1.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_2.jpg', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_3.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_4.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_5.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_6.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_7.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+        .staticblock__box
+          .staticblock__box__img
+            img(src='image/staticblock_8.png', alt='staticblock')
+          .staticblock__box__information
+            p 1987
+            .staticblock__box__information__wine
+              .load__effect
+                h1 rượu
+      article.product__selling.product__new
+        h2.title__product sản phẩm bán chạy
+        img.title__dark(src='image/title_dark.png', alt='giới thiệu')
+        .product__new__content
+          .product__new__content__specifically
+            .product
+              .product__image
+                img(src='image/hotproduct_1.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/hotproduct_2.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/hotproduct_3.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+            .product
+              .product__image
+                img(src='image/hotproduct_4.png', alt='')
+                .love__and__compare
+                  .love__and__compare__list
+                    i.fas.fa-heart
+                    span Yêu thích
+                  .love__and__compare__list
+                    i.fas.fa-chart-bar
+                    span So sánh
+              span.product__name rượu vang đà lạt
+              span.product__price__new
+                | 370.000
+                sup đ
+              span.product__price__old
+                | - 
+                del 450.000
+                sup đ
+              button.button
+                a.add__to__cart(href='') add to cart
+      article.blog__and__customer
+        .blog
+          .blog__empty
+          .blog__content
+            .blog__content__title
+              h2.title__product tin tức & blog
+              img.title__dark(src='image/title_dark.png', alt='giới thiệu')
+            .blog__content__center
+              .blog__content__left
+                a.blog__content__hover(href='')
+                  .blog__img__author__document
+                    img.blog__img(src='image/blog_1.png', alt='')
+                    .blog__author__document
+                      span.title__product vang thăng long classic
+                      p.blog__author Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+                      p.blog__document
+                        | Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bột ga đầy trắng mịn. Van nổ Thăng Long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml...
+                      span.blog__author.read__more(href='') read more
+              .blog__content__right
+                a.blog__content__hover(href='')
+                  .blog__img__author__document
+                    img.blog__img(src='image/blog_2.png', alt='')
+                    .blog__author__document
+                      span.title__product vang thăng long classic
+                      p.blog__author Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+                      p.blog__document
+                        | Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bột ga đầy trắng mịn. Van nổ Thăng Long ...
+                      span.blog__author.read__more(href='') read more
+        .customer
+          .customer__content
+            h2.title__product khách hàng
+            img.title__dark(src='image/title_dark.png', alt='giới thiệu')
+            .customer__content__title
+              i.fas.fa-quote-right
+            .customer__content__document
+              p
+                | Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ rượu nhẹ, bột ga đầy trắng mịn. Van nổ Thăng Long ...
+            img.customer__content__avatar(src='image/avatar_1.png', alt='avatar')
+            .customer__content__information
+              span.customer__content__information__name giang lt
+              span.customer__content__information__position Graphic design
+            h1
+              span .
+              | ..
+          .customer__empty
+      article.brand__logo
+        .brand__logo__img
+          img(src='image/brand_logo.png', alt='')
+    footer#footer
+      .footer__content
+        .footer__content__information
+          h3 thông tin
+          ul
+            li
+              a(href='') về chúng tôi
+            li
+              a(href='') giao hàng
+            li
+              a(href='') cảm nghĩ
+            li
+              a(href='') lưu trữ
+            li
+              a(href='') chính sách riêng tư
+        .footer__content__information.footer__content__purchase
+          h3 mua hàng
+          ul
+            li
+              a(href='') vận chuyển và trả hàng
+            li
+              a(href='') mua hàng an toàn
+            li
+              a(href='') vận quốc tế
+            li
+              a(href='') liên kết
+            li
+              a(href='') dịch vụ giảm giá
+        .footer__content__information.footer__content__send-email
+          h3 gửi email
+          form(action='')
+            label(for='') Gửi email cho chúng tôi để được hỗ trợ
+            input(type='text', placeholder='Enter your email')
+            .send
+              img(src='image/footer_send.png', alt='footer')
+              span gửi
+          .icon
+            ul
+              li
+                a(href='')
+                  i.fas.fa-dove
+              li
+                a(href='')
+                  i.fab.fa-google-plus-g
+              li
+                a(href='')
+                  i.fas.fa-volleyball-ball
+              li
+                a(href='')
+                  i.fab.fa-invision
+              li
+                a(href='')
+                  i.fas.fa-wifi
+        .footer__content__information.footer__content__contact
+          h3 liên hệ
+          .icon__and__phone
+            ul
+              li
+                i.fas.fa-map-marker-alt
+                span Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội
+              li
+                i.fas.fa-phone-volume
+                span (04) 6674 2332
+                i.fas.fa-phone-volume
+                span (04) 3786 8904
+              li
+                i.fas.fa-phone-volume
+                span (08) 6680 9686
+                i.fas.fa-envelope
+                span Support@bizweb.vn
+      .footer__bottom
+        .footer__bottom__left
+          p © CoppyRight 2018-2014 DKT Technology JSC
+        .footer__bottom__right
