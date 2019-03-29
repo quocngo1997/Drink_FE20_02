@@ -1,0 +1,320 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Address
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+  body
+    header#header.header
+      .header__category
+        .header__category__left
+          ul
+            a(href='')
+              li Tài khoản của tôi
+            a(href='')
+              li Trạng thái đơn hàng
+            a(href='')
+              li Danh sách ưa thích
+            a(href='')
+              li Giỏ hàng
+            a(href='')
+              li Đăng nhập
+            a(href='')
+              li Đăng ký
+        .header__category__right
+          input(type='text', placeholder='Tìm kiếm ở đây...')
+          i.fas.fa-search
+    section#main
+      article.menu
+        .menu__logo
+          .menu__logo__list__img
+            img.menu__logo__list__img__one(src='image/Vector Smart Object.png', alt='')
+            h2 Wine hourse
+            h4 Since 1980
+            img.menu__logo__list__img__two(src='image/logo.png', alt='')
+        .menu__category
+          ul.menu__category__list
+            li
+              a(href='#') Trang Chủ
+            li
+              a.red__wine(href='#') Rượu vang đỏ
+              .dropdown
+                i.fas.fa-caret-up
+                .dropdown__information
+                  ul
+                    li
+                      h3 rượu ngoại
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a.red__wine(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                  ul
+                    li
+                      h3 rượu vang
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                  ul
+                    li
+                      h3 rượu ngoại
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                .dropdown__img
+                  img(src='image/mega.png', alt='')
+            li
+              a(href='#') Rượu trắng
+            li
+              a(href='#') Champagne
+            li
+              a(href='#') Thông tin
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Liên hệ
+      article.main__title
+        .main__title__over
+          .main__title__over__upon
+            span.main__title__over__upon__home Trang chủ /
+            span.main__title__over__upon__current Địa chỉ
+          .main__title__over__under
+            span địa chỉ
+            img(src='image/titleleft-dark.png', alt='')
+      article.main__address
+        .main__address__content
+          .main__address__content__update__information
+            .main__address__content__update__information__part
+              form.main__address__content__update__information__part__form(action='')
+                h6 địa chỉ của bạn
+                .main__address__content__update__information__part__form__item
+                  label(for='') Tên
+                  input(type='text', placeholder='Giang')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Họ & tên đệm
+                  input(type='text', placeholder='Lê Anh')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Công ty
+                  input(type='text', placeholder='Cổ phẩn công ty DKT')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Địa chỉ
+                  input(type='text', placeholder='Tòa nhà Hà Nội, 442 Đội Cần, Ba Đình, Hà Nội')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Thành phố
+                  input(type='text', placeholder='Hà Nội')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Quốc tịch
+                  input(type='text', placeholder='Việt Nam')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Postal/Zip Code
+                  input(type='text', placeholder='2300089')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Phone
+                  input(type='text', placeholder='0974554928')
+                .main__address__content__update__information__part__form__update
+                  .main__address__content__update__information__part__form__update__checkbox
+                    input(type='checkbox')
+                    span Đặt làm địa chỉ mặc định
+                  .main__address__content__update__information__part__form__update__delete
+                    button.button
+                      a(href='') Chỉnh sửa địa chỉ
+                    button.button
+                      a.add__to__cart(href='') Xóa
+            .main__address__content__update__information__part
+              form.main__address__content__update__information__part__form(action='')
+                a(href='') Thêm địa chỉ
+                .main__address__content__update__information__part__form__item
+                  label(for='') Tên
+                  input(type='text', placeholder='Giang')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Họ & tên đệm
+                  input(type='text', placeholder='Lê Anh')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Công ty
+                  input(type='text', placeholder='Cổ phẩn công ty DKT')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Địa chỉ
+                  input(type='text', placeholder='Tòa nhà Hà Nội, 442 Đội Cần, Ba Đình, Hà Nội')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Thành phố
+                  select(name='', id='')
+                    option(value='') Hà Nội
+                    option(value='') Hà Nội
+                    option(value='') Hà Nội
+                .main__address__content__update__information__part__form__item
+                  label(for='') Quốc tịch
+                  select(name='', id='')
+                    option(value='') Việt Nam
+                    option(value='') Việt Nam
+                    option(value='') Việt Nam
+                .main__address__content__update__information__part__form__item
+                  label(for='') Postal/Zip Code
+                  input(type='text', placeholder='2300089')
+                .main__address__content__update__information__part__form__item
+                  label(for='') Phone
+                  input(type='text', placeholder='0974554928')
+                .main__address__content__update__information__part__form__update
+                  .main__address__content__update__information__part__form__update__checkbox
+                    input(type='checkbox')
+                    span Đặt làm địa chỉ mặc định
+                  .main__address__content__update__information__part__form__update__delete
+                    button.button
+                      a(href='') Chỉnh sửa địa chỉ
+                    button.button
+                      a.add__to__cart(href='') Xóa
+          .main__address__content__information
+            .main__address__content__information__item
+              label(for='') Tên
+              label(for='') Giang
+            .main__address__content__information__item
+              label(for='') Họ & tên đệm
+              label(for='') Lê Anh
+            .main__address__content__information__item
+              label(for='') Công ty
+              label(for='') Cổ phần công nghệ DKT
+            .main__address__content__information__item
+              label(for='') Địa chỉ
+              label(for='') Tòa nhà Hà Nội Group,442 Đội Cấn, Ba Đình, Hà Nội
+            .main__address__content__information__item
+              label(for='') Thành phố
+              label(for='') Hà Nội
+            .main__address__content__information__item
+              label(for='') Quốc tịch
+              label(for='') Việt Nam
+            .main__address__content__information__item
+              label(for='') Postal/Zip Code
+              label(for='') 230089
+            .main__address__content__information__item
+              label(for='') Phone
+              label(for='') 0974554928
+            a(href='') Chỉnh sửa địa chỉ
+          .main__address__content__information
+            .main__address__content__information__item
+              label(for='') Tên
+              label(for='') Giang
+            .main__address__content__information__item
+              label(for='') Họ & tên đệm
+              label(for='') Lê Anh
+            .main__address__content__information__item
+              label(for='') Công ty
+              label(for='') Cổ phần công nghệ DKT
+            .main__address__content__information__item
+              label(for='') Địa chỉ
+              label(for='') Tòa nhà Hà Nội Group,442 Đội Cấn, Ba Đình, Hà Nội
+            .main__address__content__information__item
+              label(for='') Thành phố
+              label(for='') Hà Nội
+            .main__address__content__information__item
+              label(for='') Quốc tịch
+              label(for='') Việt Nam
+            .main__address__content__information__item
+              label(for='') Postal/Zip Code
+              label(for='') 230089
+            .main__address__content__information__item
+              label(for='') Phone
+              label(for='') 0974554928
+            a(href='') Chỉnh sửa địa chỉ
+      article.brand__logo
+        .brand__logo__img
+          img(src='image/brand_logo.png', alt='')
+    footer#footer
+      .footer__content
+        .footer__content__information
+          h3 thông tin
+          ul
+            li
+              a(href='') về chúng tôi
+            li
+              a(href='') giao hàng
+            li
+              a(href='') cảm nghĩ
+            li
+              a(href='') lưu trữ
+            li
+              a(href='') chính sách riêng tư
+        .footer__content__information.footer__content__purchase
+          h3 mua hàng
+          ul
+            li
+              a(href='') vận chuyển và trả hàng
+            li
+              a(href='') mua hàng an toàn
+            li
+              a(href='') vận quốc tế
+            li
+              a(href='') liên kết
+            li
+              a(href='') dịch vụ giảm giá
+        .footer__content__information.footer__content__send-email
+          h3 gửi email
+          form(action='')
+            label(for='') Gửi email cho chúng tôi để được hỗ trợ
+            input(type='text', placeholder='Enter your email')
+            .send
+              img(src='image/footer_send.png', alt='footer')
+              span gửi
+          .icon
+            ul
+              li
+                a(href='')
+                  i.fas.fa-dove
+              li
+                a(href='')
+                  i.fab.fa-google-plus-g
+              li
+                a(href='')
+                  i.fas.fa-volleyball-ball
+              li
+                a(href='')
+                  i.fab.fa-invision
+              li
+                a(href='')
+                  i.fas.fa-wifi
+        .footer__content__information.footer__content__contact
+          h3 liên hệ
+          .icon__and__phone
+            ul
+              li
+                i.fas.fa-map-marker-alt
+                span Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội
+              li
+                i.fas.fa-phone-volume
+                span (04) 6674 2332
+                i.fas.fa-phone-volume
+                span (04) 3786 8904
+              li
+                i.fas.fa-phone-volume
+                span (08) 6680 9686
+                i.fas.fa-envelope
+                span Support@bizweb.vn
+      .footer__bottom
+        .footer__bottom__left
+          p © CoppyRight 2018-2014 DKT Technology JSC
+        .footer__bottom__right

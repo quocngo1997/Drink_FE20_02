@@ -1,0 +1,224 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Register
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+  body
+    header#header.header
+      .header__category
+        .header__category__left
+          ul
+            a(href='')
+              li Tài khoản của tôi
+            a(href='')
+              li Trạng thái đơn hàng
+            a(href='')
+              li Danh sách ưa thích
+            a(href='')
+              li Giỏ hàng
+            a(href='')
+              li Đăng nhập
+            a(href='')
+              li Đăng ký
+        .header__category__right
+          input(type='text', placeholder='Tìm kiếm ở đây...')
+          i.fas.fa-search
+    section#main
+      article.menu
+        .menu__logo
+          .menu__logo__list__img
+            img.menu__logo__list__img__one(src='image/Vector Smart Object.png', alt='')
+            h2 Wine hourse
+            h4 Since 1980
+            img.menu__logo__list__img__two(src='image/logo.png', alt='')
+        .menu__category
+          ul.menu__category__list
+            li
+              a(href='#') Trang Chủ
+            li
+              a.red__wine(href='#') Rượu vang đỏ
+              .dropdown
+                i.fas.fa-caret-up
+                .dropdown__information
+                  ul
+                    li
+                      h3 rượu ngoại
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a.red__wine(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                  ul
+                    li
+                      h3 rượu vang
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                  ul
+                    li
+                      h3 rượu ngoại
+                    li
+                      a(href='#') Rượu Chivar
+                    li
+                      a(href='#') Hàng độc - rượu đọc đáo
+                    li
+                      a(href='#') Johnnie Walker
+                    li
+                      a(href='#') Rượu Whisky
+                    li
+                      a(href='#') Rượu Reni Martin
+                    li
+                      a(href='#') Rượu Glenmorangie
+                .dropdown__img
+                  img(src='image/mega.png', alt='')
+            li
+              a(href='#') Rượu trắng
+            li
+              a(href='#') Champagne
+            li
+              a(href='#') Thông tin
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Liên hệ
+      article.main__title
+        .main__title__over
+          .main__title__over__upon
+            span.main__title__over__upon__home Trang chủ /
+            span.main__title__over__upon__current Đăng ký
+          .main__title__over__under.main__title__over__login__register
+            .main__title__over__login__register__login
+              span đăng ký
+              img(src='image/titleleft-dark.png', alt='')
+            .main__title__over__login__register__move__register
+              button.button
+                a.add__to__cart(href='') đăng nhập
+      article.main__login
+        .main__login__content
+          form.main__login__content__center(action='')
+            .main__login__content__center__upon
+              h6 thông tin cá nhân
+            .main__login__content__center__under
+              .main__login__content__center__under__email
+                label(for='') Tên trước *
+                input(type='text')
+              .main__login__content__center__under__email
+                label(for='') Tên sau *
+                input(type='text')
+              .main__login__content__center__under__email
+                label(for='') Email *
+                input(type='text')
+              .main__login__content__center__under__password
+                label(for='') Password *
+                input(type='Password')
+              input(type='checkbox')
+              span đăng ký nhận bảng tin
+            .main__login__content__center__upon
+              h6(style='margin-top: 30px') thông tin cá nhân
+            .main__login__content__center__under__password(style='margin-bottom: 30px')
+              label(for='') Mật khẩu *
+              input(type='Password')
+            .main__login__content__center__under__password
+              label(for='') Xác nhận mật khẩu *
+              input(type='Password')
+            .main__login__content__center__under__send
+              button.button
+                a.add__to__cart(href='') gửi
+              button.button
+                a.add__to__cart(href='') quay lại
+      article.brand__logo
+        .brand__logo__img
+          img(src='image/brand_logo.png', alt='')
+    footer#footer
+      .footer__content
+        .footer__content__information
+          h3 thông tin
+          ul
+            li
+              a(href='') về chúng tôi
+            li
+              a(href='') giao hàng
+            li
+              a(href='') cảm nghĩ
+            li
+              a(href='') lưu trữ
+            li
+              a(href='') chính sách riêng tư
+        .footer__content__information.footer__content__purchase
+          h3 mua hàng
+          ul
+            li
+              a(href='') vận chuyển và trả hàng
+            li
+              a(href='') mua hàng an toàn
+            li
+              a(href='') vận quốc tế
+            li
+              a(href='') liên kết
+            li
+              a(href='') dịch vụ giảm giá
+        .footer__content__information.footer__content__send-email
+          h3 gửi email
+          form(action='')
+            label(for='') Gửi email cho chúng tôi để được hỗ trợ
+            input(type='text', placeholder='Enter your email')
+            .send
+              img(src='image/footer_send.png', alt='footer')
+              span gửi
+          .icon
+            ul
+              li
+                a(href='')
+                  i.fas.fa-dove
+              li
+                a(href='')
+                  i.fab.fa-google-plus-g
+              li
+                a(href='')
+                  i.fas.fa-volleyball-ball
+              li
+                a(href='')
+                  i.fab.fa-invision
+              li
+                a(href='')
+                  i.fas.fa-wifi
+        .footer__content__information.footer__content__contact
+          h3 liên hệ
+          .icon__and__phone
+            ul
+              li
+                i.fas.fa-map-marker-alt
+                span Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội
+              li
+                i.fas.fa-phone-volume
+                span (04) 6674 2332
+                i.fas.fa-phone-volume
+                span (04) 3786 8904
+              li
+                i.fas.fa-phone-volume
+                span (08) 6680 9686
+                i.fas.fa-envelope
+                span Support@bizweb.vn
+      .footer__bottom
+        .footer__bottom__left
+          p © CoppyRight 2018-2014 DKT Technology JSC
+        .footer__bottom__right
