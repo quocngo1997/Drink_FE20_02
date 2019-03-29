@@ -841,6 +841,18 @@
 		 		display: block;
 		 	}
 		}
+		&__login__register{
+			display: flex;
+			&__login{
+				width: $fifty-pc;
+ 		 	}
+		 	&__move__register{
+		 	 	width: $fifty-pc;
+		 	 	button{
+		 	 	  	float: right;
+		 	 	}
+		 	}
+		}
 	}
 }
 	.main__blog{
@@ -931,7 +943,7 @@
 		 	 	  	}
 		 	 	}
 		 	 	&__tag{
-		 	 	 	&__history{
+		 	 	 	&__history{  
 		 	 	 		margin-top: $fifteen-px;
 		 	 	 	 	span{
 		 	 	 	 		@extend .link__font;
@@ -1104,7 +1116,7 @@
 	  	 	  				}
 	  	 	  			}
 	  	 	  		}
-	  			}
+	  			}  
 	  			&__follow{
 	  				ul{
 	  					list-style-type: none; 
@@ -1120,7 +1132,674 @@
 	  	   	}
 	  	}
 	}
-}
+	.main__login{
+	 	@include width__height($one-hundred-pc, auto);
+	 	&__content{
+	 	 	@include width__height($seventy-pc, auto);
+	 	 	margin: auto;
+	 	 	&__center{
+	 	 		padding: $thirty-px;
+	 	 		border: $one-px solid rgba($black, $zero-dog-five);
+				&__upon{
+				 	h6{
+				 	 	display: block;
+				 	 	margin-bottom: $thirty-px;
+				 	 	@extend .link__font;
+				 	 	text-transform: uppercase;
+				 	}
+				 	p{ 
+				 		@extend .link__font;
+				 		font-size: $fifteen-px;
+				 	}
+				}
+				&__under{
+				 	&__email, &__password{
+				 		display: flex;
+				 		label{
+				 			font-size: $fifteen-px;
+				 			@extend .link__font;
+				 			display: block;
+				 			width: $twenty-pc;
+				 		}
+				 		input{
+				 			width: 80%;
+				 		}
+				 	}
+				 	&__email{
+				 		margin-bottom: $thirty-px;
+				 	}
+				 	input[type="checkbox"]{
+				 		margin-left: $twenty-pc;
+				 	}
+				 	span{
+				 	 	@extend .link__font; 
+				 	 	font-size: $twelve-px;
+				 	}
+				 	&__send{
+				 		margin-top: $thirty-px;
+				 	 	display: flex;
+				 	 	justify-content: flex-end;
+				 	 	button{
+				 	 		margin-left: $ten-px;
+				 	 	}
+				 	}
+				}
+	 	 	}
+	 	}
+	}
+	.main__address{
+	 	@include width__height($one-hundred-pc, auto);
+	 	&__content{
+	 	 	@include width__height($seventy-pc, auto);
+	 	 	margin: auto;
+	 	  	&__update__information{
+	 	  	 	display: flex;
+	 	  	 	justify-content: space-between;
+	 	  	 	&__part{
+	 	  	 	 	@include width__height($fourty-eight-pc, auto);
+	 	  	 	  	&__form{
+	 	  	 	  	 	h6{
+	 	  	 	  	 	 	@extend .link__font;
+	 	  	 	  	 	 	text-transform: uppercase;
+	 	  	 	  	 	}
+	 	  	 	  	 	&__item{
+	 	  	 	  	 		margin-bottom: $twenty-px;
+	 	  	 	  	 		display: flex;
+	 	  	 	  	 	 	label{
+	 	  	 	  	 	 		display: block;
+	 	  	 	  	 	 		width: $twenty-pc;
+	 	  	 	  	 	 		@extend .link__font;
+	 	  	 	  	 	 		font-size: $fifteen-px;
+	 	  	 	  	 	 	}
+	 	  	 	  	 	 	input{
+	 	  	 	  	 	 		width: 80%;
+	 	  	 	  	 	 		font-size: $fifteen-px;
+	 	  	 	  	 	 		@extend .link__font;
+	 	  	 	  	 	 	}
+	 	  	 	  	 	 	&:nth-child(2){
+	 	  	 	  	 	 	 	margin-top: $twenty-px;
+	 	  	 	  	 	 	}
+	 	  	 	  	 	 	&:nth-child(9){
+	 	  	 	  	 	 	 	margin-bottom: $zero-px;
+	 	  	 	  	 	 	}
+	 	  	 	  	 	 	select{
+	 	  	 	  	 	 		width: 80%;
+	 	  	 	  	 	 		font-size: $fifteen-px;
+	 	  	 	  	 	 		@extend .link__font;
+	 	  	 	  	 	 		opacity: $zero-dog-seven;
+	 	  	 	  	 	 	}
+	 	  	 	  	 	}
+	 	  	 	  	 	&__update{
+	 	  	 	  	 		margin-left: $twenty-pc;
+	 	  	 	  	 		&__checkbox{
+		 	  	 	  	 		span{
+		 	  	 	  	 		 	@extend .link__font;
+		 	  	 	  	 	 		font-size: $twelve-px;
+		 	  	 	  	 		}	
+		 	  	 	  	 	}
+		 	  	 	  	 	&__delete{
+		 	  	 	  	 		margin-bottom: $thirty-px;
+		 	  	 	  	 		margin-top: $ten-px; 
+		 	  	 	  	 	 	button{
+		 	  	 	  	 	 		&:first-child{
+		 	  	 	  	 	 		 	background-color: #2E9AFE;
+		 	  	 	  	 	 		 	a{
+		 	  	 	  	 	 		 		text-decoration: none;
+		 	  	 	  	 	 		 		color: $white;
+		 	  	 	  	 	 		 		font-size: $fifteen-px;
+		 	  	 	  	 	 		 		@extend .link__font;
+		 	  	 	  	 	 		 	} 
+		 	  	 	  	 	 		}
+		 	  	 	  	 	 	}
+		 	  	 	  	 	}
+	 	  	 	  	 	}
+	 	  	 	  	}
+	 	  	 	}
+	 	  	}
+	 	  	&__information{
+	 	  	 	@include width__height($fifty-pc, auto);
+	 	  	 	padding-bottom: $fourty-px;
+	 	  	 	border-bottom: 1px solid rgba($black, $zero-dog-six);
+	 	  	 	a{
+	 	  	 		@extend .link__font;
+	 	  	 		font-size: $fifteen-px;
+	 	  	 		float: right;
+	 	  	 	}
+	 	  	 	&__item{
+	 	  	 		display: flex;
+	 	  	 	 	label{
+	 	  	 	 		font-size: $fifteen-px;
+	 	  	 	 	 	display: block;
+						@extend .link__font;
+	 	  	 	 	 	&:first-child{
+	 	  	 	 	 	 	width: $twenty-pc;
+	 	  	 	 	 	}
+						&:last-child{
+	 	  	 	 	 	 	width: 80%;
+	 	  	 	 	 	}
+	 	  	 	 	}
+	 	  	 	}
+	 	  	 	&:last-child{
+	 	  	 		margin-top: $twenty-px;
+	 	  	 		margin-bottom: $twenty-px;
+	 	  	 	}
+	 	  	}
+	 	}
+	}
+	.detail__blog{
+		@include width__height($one-hundred-pc, auto);
+	 	&__content{
+	 		@include width__height($seventy-pc, auto);
+	 		margin: auto;
+	 		display: flex;
+	 		justify-content: space-between;	
+		 	 &__left{
+		 	 	@include width__height($thirty-pc, auto);
+		 	 	h6{
+		 	 		@extend .link__font;
+		 			font-size: $twenty-px;
+		 	 		text-transform: uppercase;
+		 	 	}
+		 	 	&__post{
+		 	 	 	&__part{
+		 	 	 		display: flex;
+		 		 		justify-content: space-between;
+		 		 		margin: $twenty-px $zero-px;
+	 	 		 	 	&__img{
+	 	 		 	 		@include width__height($fourty-pc, 100px);
+	 	 		 	 		img{
+	 	 		 	 		 	@include width__height($one-hundred-pc, $one-hundred-pc);
+	 	 		 	 		}
+	 	 		 	 	}
+	 	 		 	 	&__information{
+	 	 		 	 	 	@include width__height(55%, auto);
+	 	 		 	 	 	p{
+	 	 		 	 	 		@extend .link__font; 
+	 	 		 	 	 		text-transform: uppercase;
+	 	 		 	 	 		font-size: $fifteen-px;
+	 	 		 	 	 	}
+	 	 		 	 	 	i, span{
+	 	 		 	 	 		color: $black;
+	 	 		 	 	 		opacity: $zero-dog-six;
+	 	 		 	 	 		display: inline-block;
+	 	 		 	 	 		font-size: $fifteen-px; 
+	 	 		 	 	 	}
+	 	 		 	 	}
+	 	 		 	}
+	 	 		} 
+	 	 		&__video{
+	 	 			@include width__height($one-hundred-pc, auto);
+	 	 			&__mp4{
+						@include width__height($one-hundred-pc, auto);
+						video{
+							@include width__height($one-hundred-pc, $one-hundred-pc);
+						}
+	 	 			}
+	 	 		}
+	 	 	}
+	 	 	&__right{
+	 	 	  	@include width__height(65%, $one-hundred-pc);
+				&__img{
+		 	 	  	img{
+		 	 	  		@include width__height($one-hundred-pc, $one-hundred-pc);
+		 	 	  	}
+		 	 	}
+	 	 	  	.main__title__over__under{
+	 	 	  		padding-top: $twenty-three-px;
+	 	 	  		span{
+	 	 	  			font-weight: bold;
+	 	 	  		} 
+	 	 	  	}
+	 	 	  	&__information{
+	 	 	  	 	p{
+	 	 	  	 		@extend .link__font;
+	 	 	  	 	 	opacity: $zero-dog-six;
+	 	 	  	 	 	font-size: $fifteen-px;
+	 	 	  	 	}
+	 	 	  	 	span{
+	 	 	  	 		@extend .link__font;
+	 	 	  	 	 	opacity: $zero-dog-seven;
+	 	 	  	 	 	font-size: $seventeen-px;
+	 	 	  	 	}
+	 	 	  	}
+	 	 	  	form{
+	 	 	  	 	button{
+	 	 	  	 		margin-left: $twenty-pc;
+	 	 	  	 		margin-bottom: $thirty-px;
+	 	 	  	 		padding: $zero $ten-px;
+	 	 	  	 		border: none;
+	 	 	  	 		a{
+	 	 	  	 			color: $black;
+	 	 	  	 			&:hover{
+	 	 	  	 				text-decoration: none;
+	 	 	  	 			}
+	 	 	  	 		}
+	 	 	  	 	}
+	 	 	  	}
+	 	 	  	&__comment{
+	 	 	  	  	&__content{
+	 	 	  	  	 	&__answer{
+	 	 	  	  	 	 	background-color: #A4A4A4;
+	 	 	  	  	 	 	span, a{
+	 	 	  	  	 	 		color: $black;
+	 	 	  	  	 	 	 	@extend .link__font;
+	 	 	  	  	 	 	   	font-size: $seventeen-px;
+	 	 	  	  	 	 	}
+	 	 	  	  	 	 	a{ 
+	 	 	  	  	 	 	 	text-decoration: none;
+	 	 	  	  	 	 	  	float: right;
+	 	 	  	  	 	 	  	&:hover{
+	 	 	  	  	 	 	  		text-decoration: none;
+	 	 	  	  	 	 	  		color: $orange;
+	 	 	  	  	 	 	  	}
+	 	 	  	  	 	 	}
+	 	 	  	  	 	}
+	 	 	  	  	 	p{
+	 	 	  	  	 		padding:10px;
+	 	 	  	  	 	 	@extend .link__font;
+	 	 	  	  	 	 	font-size: $fifteen-px;
+	 	 	  	  	 	}
+	 	 	  	  	}
+	 	 	  	  	&__page{
+	 	 	  	  		margin-bottom: $fifty-px;
+	 	 	  	  		float: right;
+	 	 	  	  	}
+	 	 	  	}
+	 	 	}
+	 	}
+	}
+	.main__order{
+		margin-bottom: $fifty-px;
+	 	@include width__height($one-hundred-pc, $one-hundred-pc);
+	 	&__content{
+	 	 	@include width__height($seventy-pc, $one-hundred-pc);
+	 	 	margin: auto;  
+	 	 	display: flex;
+	 	 	justify-content: space-between; 
+	 	  	&__list{
+	 	  	 	@include width__height($seventy-pc, $one-hundred-pc);
+	 	  	 	&__order{
+	 	  	 		border: $one-px solid $black;
+	 	  	 		border-bottom: none;
+	 	  	 	 	padding: $ten-px; 
+	 	  	 	  	background-color: #D8D8D8;
+	 	  	 	  	h6{
+	 	  	 	  		@extend .link__font;
+	 	  	 	  		text-transform: uppercase;
+	 	  	 	  		font-size: $sixteen-px;
+	 	  	 		  	font-weight: bold;
+	 	  	 	  	}
+	 	  	 	  	p{
+	 	  	 	  	 	@extend .link__font;
+	 	  	 	  	  	font-size: $fifteen-px; 
+	 	  	 	  	}
+	 	  	 	}
+	 	  	 	&__pay{
+	 	  	 	  	table{
+	 	  	 	  	 	tr{
+	 	  	 	  	 		text-align: center;
+	 	  	 	  	 	 	&:first-child{
+	 	  	 	  	 	 	 	th{
+	 	  	 	  	 	 	 		text-transform: uppercase;
+	 	  	 	  	 	 	 		@extend .link__font;
+	 	  	 	  	 	 	 		font-size: $fifteen-px;  
+	 	  	 	  	 	 	 	}
+	 	  	 	  	 	 	}
+	 	  	 	  	 	  	td{
+	 	  	 	  	 	  		@extend .link__font; 
+	 	  	 	  	 	  		font-size: $fifteen-px;
+	 	  	 	  	 	  	 	&:nth-child(2){
+	 	  	 	  	 	  	 	 	text-transform: uppercase;
+	 	  	 	  	 	 	 		font-size: $fifteen-px;
+	 	  	 	  	 	  	 	}
+	 	  	 	  	 	  	 	&:nth-child(3){
+	 	  	 	  	 	  	 	 	text-transform: uppercase;
+	 	  	 	  	 	 	 		font-size: $fifteen-px;
+	 	  	 	  	 	  	 	}
+	 	  	 	  	 	  	}
+	 	  	 	  	 	}
+	 	  	 	  	}
+	 	  	 	}
+	 	  	}
+	 	  	&__information{
+	 	  	 	@include width__height($twenty-five-dog-five-pc, $one-hundred-pc);
+	 	  	 	padding: $ten-px;
+	 	  	 	border: $one-px solid $black;
+	 	  	 	background-color: #D8D8D8;
+	 	  	 	h6{
+	 	  	 	 	@extend .link__font;
+	 	  	 	  	text-transform: uppercase;
+	 	  	 	  	font-size: $sixteen-px;
+	 	  	 	  	font-weight: bold;
+	 	  	 	}
+	 	  	 	&__name{
+	   	 	 	 	.fa-user-alt::after{
+	  	 	 	 	  	content:" GiangLe Leanhgiang89@gmail.com"; 
+ 	  	 	 	 	  	@extend .link__font;
+ 	  	 	 	 	  	font-size: $fifteen-px;
+ 	  	 	 	 	}
+ 	  	 	 	 	.fa-map-marker-alt::after{
+						content: " Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội.";
+						@extend .link__font;
+ 	  	 	 	 	  	font-size: $fifteen-px;
+ 	  	 	 	 	}
+ 	  	 	 	 	.fa-phone-volume::after{
+ 	  	 	 	 	 	content:" (08) 6608 9686"; 
+ 	  	 	 	 	  	@extend .link__font;
+ 	  	 	 	 	  	font-size: $fifteen-px;
+ 	  	 	 	 	}
+	 	  	 	}
+	 	  	 	a{
+	 	  	 	 	@extend .link__font;
+ 	  	 	 	 	font-size: $seventeen-px; 
+ 	  	 	 	 	color: $black;
+	 	  	 	}
+	 	  	}
+	 	}
+	}
+	.main__detail__product{
+	 	&__content{
+	 		@include width__height($seventy-pc, $one-hundred-pc); 
+	 		margin: auto;
+	 		&__upon{
+	 			padding-bottom: $fifty-px;
+	 			display: flex;
+	 			justify-content: space-between;
+	 		 	&__left{
+	 		 		border: $one-px solid rgba($black, $zero-dog-five);
+	 		 		display: flex;     
+	 		 		justify-content: space-between;  
+	 		 		@include width__height(45%, $one-hundred-pc); 
+	 		 		&__list{
+	 		 			border-right: $one-px solid rgba($black, $zero-dog-five);
+	 		 			padding: $twenty-px $zero;	
+	 		 		 	@include width__height($thirty-pc, $one-hundred-pc); 
+	 		 		  	&__center{
+	 		 		  		@include width__height($eighty-five-pc, $one-hundred-pc); 
+	 		 		  		margin: auto;
+	 		 		  		text-align: center;
+	 		 		  		i{
+	 		 		  			display: block;
+	 		 		  		}
+	 		 		  		img{
+	 		 		  			display: block;
+	 		 		  			margin: auto;
+	 		 		  		}
+	 		 		  	}
+	 		 		}
+	 		 		&__wine{
+	 		 			border-left: none;
+	 		 		 	@include width__height($seventy-pc, $one-hundred-pc); 
+	 		 		 	display: block;
+	 		 		 	display: flex;
+	 		 		 	align-items: center;
+	 		 		 	img{
+	 		 		 		@include width__height(95%, 700px);  
+	 		 		 	}
+	 		 		}
+	 		 	}
+	 		 	&__right{
+	 		 		@include width__height($fifty-pc, $one-hundred-pc);
+	 		 		h4{
+	 		 		  	color: $orange;
+	 		 		  	margin-top: $ten-px; 
+	 		 		} 
+					i{
+						&:nth-child(8)::after{
+						 	content:"   1 Review(S) | Add Your Review";
+						 	font-weight: normal; 
+						}
+					}
+					&__color{
+						margin-bottom: $thirty-px; 
+					  	span{
+					  		display: block;
+					  		margin-bottom: $twenty-px;
+					  		text-transform: uppercase;
+					  		font-size: $fifteen-px;
+					  		@extend .link__font; 
+					  		font-weight: bold;
+					  	}
+					  	b{
+					  		display: inline-block;
+					  		@include width__height($fourty-px, $fourty-px);
+					  		margin-right: $ten-px;
+					  	}
+					  	.yellow-color{
+					  		background-color: $yellow;
+					  	}
+					  	.black-color{
+					  		background-color: $black;
+					  	}
+					  	.red-color{
+					  		background-color: red;
+					  	}
+					  	select{
+					  	 	@include width__height($two-hundred-px, $fourty-px);
+					  	 	padding-left: $twenty-px;
+					  	}
+					 	&__box{
+					 		display: inline-block;
+					 		display: flex;
+					 		&__down{
+					 			display: flex;
+						 	 	@include width__height(140px, $fourty-px);
+								strong{
+									cursor: default;
+						  			border: $one-px solid $black;
+						  			text-align: center;
+						  		}
+						  		.up-down{
+						  		 	display: inline-block;
+						  		 	@include width__height($twenty-five-pc, $one-hundred-pc);
+						  		 	background-color: #BDBDBD;
+						  		}
+						 		.number-three{
+						 			border-left: none;
+						 			border-right: none;
+						 		 	display: inline-block;
+						 	 	 	@include width__height($fifty-pc, $one-hundred-pc);
+							  	 	background-color: $white;
+						 		}
+						 	}
+						 	.button{
+						 		margin-left: $twenty-px;
+						 	} 
+					 	}
+					 	p{
+					 		opacity: $zero-dog-seven;
+					 		font-size: $fifteen-px;
+					 		color: $black;
+					 		@extend .link__font;
+					 	}
+					}
+					&__interative{
+						i{
+							font-size: $twenty-five-px;
+							margin-right: $twenty-px;
+						}
+						.fa-heart::after{
+							display: inline-block;
+						  	content:"  Yêu thích";
+						}
+						.fa-chart-bar::after{
+							display: inline-block;
+						  	content:"  So sánh";
+						}
+						.fa-envelope::after{
+							display: inline-block;
+						  	content:"  Email";
+						}
+					}
+	 		 	}
+	 		 	hr{
+	 		 		height: $two-px;
+	 		 	}
+	 		}
+	 		&__center{
+	 			padding-bottom: $fifty-px;
+	 			display: flex;
+	 			justify-content: space-between;
+	 		 	&__information{
+	 		 		@include width__height(55%, $one-hundred-pc);
+	 		 	 	&__title{
+	 		 	 	 	span{
+	 		 	 	 	 	display: inline-block;
+	 		 	 	 	 	padding: $ten-px;
+	 		 	 	 	  	color: $black;
+	 		 	 	 	  	text-transform: uppercase;
+	 		 	 	 	  	font-size: $twenty-px;
+	 		 	 	 	  	@extend .link__font;
+	 		 	 	 	  	cursor: default;
+	 		 	 	 	  	margin-right: $twenty-px;
+	 		 	 	 	  	font-weight: bold;
+	 		 	 	 	  	&:hover{
+	 		 	 	 	  	 	background-color: $orange;
+	 		 	 	 	  	}
+	 		 	 	 	}
+	 		 	 	}
+	 		 	 	&__content{
+	 		 	 		margin-top: $twenty-px;
+	 		 	 	  	color: $black;
+	 		 	 	  	opacity: $zero-dog-eight;
+	 		 	 	   	font-size: $fifteen-px;
+	 		 	 	   	@extend .link__font;
+	 		 	 	   	text-indent: $twenty-px;
+	 		 	 	}
+	 		 	}
+	 		 	&__img{
+	 		 	 	@include width__height($fourty-pc, $one-hundred-pc);
+	 		 	  	img{
+	 		 	  		@include width__height(auto, $two-hundred-fifty-px);
+	 		 	  	}
+	 		 	}
+	 		}
+	 		.product__new__content__specifically{
+	 		 	@include width__height($one-hundred-pc, $one-hundred-pc);
+	 		 	display: flex;
+	 		 	justify-content: space-around;
+	 		}
+	 	}
+	}
+	.main__cart{
+		&__content{
+			@include width__height($seventy-pc, $one-hundred-pc);
+			margin: auto;
+		 	&__list{
+		 	 	table{
+		 	 		background-color: #BDBDBD;
+		 	 		width: $one-hundred-pc;
+		 	 		text-align: center;
+		 	 		tr{
+		 	 			th{
+		 	 				text-transform: uppercase;
+		 	 				@extend .link__font;
+		 	 			}
+		 	 			td{
+		 	 				&:nth-child(2){
+		 	 					text-transform: uppercase;
+		 	 					@extend .link__font;
+		 	 				}
+		 	 			}
+		 	 		}
+		 	 	}
+		 	}
+		 	&__update{
+		 		margin-top: $twenty-px;
+		 		float: right;   
+		 		margin-bottom: $fifty-px;
+		 	}
+		}
+	}
+	.main__error{
+		@include width__height($one-hundred-pc, $one-hundred-pc);
+		&__content{
+		 	@include width__height($one-hundred-pc, $two-hundred-fifty-px);
+		 	margin-top: $two-hundred-px;   
+		 	background-color: $orange; 
+		 	position: relative;
+		 	&__img{
+		 		@include width__height(300px, 450px);
+			  	position: absolute; 
+			  	top: -45%;
+			  	left: 10%; 
+			  	img{
+			  		@include width__height(auto, $one-hundred-pc);
+			  		position: relative;
+			  		top: -32px;
+			  	}
+		 	}
+		 	&__error404{
+		 	 	@include width__height(45%, $one-hundred-pc);
+		 	 	position: absolute; 
+		 	 	top: $zero;
+		 	 	left: 40%;
+		 	 	img{
+		 	 		@include width__height($one-hundred-pc, $one-hundred-pc);
+		 	 	}
+		 	}
+		 	&__text{
+		 		@include width__height(540px, 70px);
+		 		position: absolute;
+		 		top: 31.5%;
+		 		left: 28%;
+		 		position: relative;
+		 	 	h1{
+		 	 		position: absolute;
+		 	 		left: 35px;
+		 	 		top: -62%;
+		 	 	 	font-family: "error";
+		 	 	 	font-size: $eighty-px;
+		 	 	}
+		 	 	h4{
+		 	 		font-family: "roboto";
+		 	 		text-transform: uppercase;
+		 	 		position: absolute;
+		 	 		right: $zero;
+		 	 	}
+		 	 	h6{
+		 	 		font-family: "Blenda";
+		 	 		position: absolute;
+		 	 		right: $zero;
+		 	 		bottom: -$ten-px;
+		 	 		font-size: 26px;
+		 	 	}
+		 	}
+		}
+		&__logo{
+		 	margin-top: $eighty-px;
+		 	&__content{
+		 	 	@include width__height($fifty-pc, $one-hundred-px); 
+		 	 	margin: auto; 
+		 	 	display: flex;
+		 	 	&__img{
+					@include width__height($thirty-pc, $one-hundred-pc); 
+					img{
+						@include width__height(auto, $one-hundred-pc);
+						display: block;
+						margin: auto;
+					}
+		 	 	}
+		 	 	&__search{
+		 	 		@include width__height($seventy-pc, $one-hundred-pc); 
+		 	 		display: flex;
+		 	 		align-items: center;
+		 	 		&__home{
+		 	 			margin-right: $ten-px;
+		 	 		 	display: inline-block;
+		 	 		 	a{
+		 	 		 		color: black;
+		 	 		 		text-decoration: underline;
+		 	 		 		text-transform: uppercase;
+						 	@extend .link__font;
+						 	font-size: $twelve-px;
+		 	 		 	}	
+		 	 		}
+		 	 	}
+		 	}
+		}
+	}
+} 
 #footer{
   	.footer__content{
   	 	width: $seventy-pc;

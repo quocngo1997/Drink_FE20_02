@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Error
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+  body
+    section#main
+      article.main__error
+        .main__error__content
+          .main__error__content__img
+            img(src='image/loi404.png', alt='')
+          .main__error__content__error404
+            img(src='image/404.png', alt='')
+          .main__error__content__text
+            h1 Lỗi
+            h4 đây không phải là
+            h6 trang web bạn đang tìm kiếm
+        .main__error__logo
+          .main__error__logo__content
+            .main__error__logo__content__img
+              img(src='image/logo_error.png', alt='')
+            .main__error__logo__content__search
+              .main__error__logo__content__search__home
+                a(href='') trang chủ
+                i.fas.fa-caret-right
+              .main__error__logo__content__search__home
+                a(href='') liên hệ
+                i.fas.fa-caret-right
+              input(type='text', placeholder='search')
